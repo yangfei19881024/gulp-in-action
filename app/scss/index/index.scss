@@ -1,0 +1,9 @@
+@import "../common";
+$color: red;
+nav{
+  color:$color;
+  background:red;
+  @include display-flex(inline-flex);
+  @include align-items(center);
+  @include justify-content(center);
+}
