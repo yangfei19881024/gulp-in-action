@@ -1,9 +1,14 @@
 @import "../common";
 $color: red;
+$bluecolor: blue;
 nav{
   color:$color;
   background:red;
   @include display-flex(inline-flex);
   @include align-items(center);
   @include justify-content(center);
+}
+
+footer{
+  background:$bluecolor;
 }

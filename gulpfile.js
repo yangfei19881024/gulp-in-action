@@ -3,9 +3,8 @@
 //
 
 const gulp = require('gulp');
-const babel = require('gulp-babel');
-var compass = require('gulp-compass');
-var path = require('path');
+const path = require('path');
+const $ = require('gulp-load-plugins')();
 
 var config = {
   src:"./app",
@@ -14,7 +13,7 @@ var config = {
 
 gulp.task('es62es5', function(){
     return gulp.src('app/es6/**/*.js')
-        .pipe(babel({
+        .pipe($.babel({
             presets: ['es2015']
         }))
         .pipe(gulp.dest('app/scripts/'));
@@ -24,7 +23,7 @@ gulp.task('es62es5', function(){
 
 gulp.task('compass', function() {
   gulp.src('app/scss/**/*.scss')
-    .pipe(compass({
+    .pipe($.compass({
       project: path.join(__dirname, 'app'),
       css: 'css',
       sass: 'scss',

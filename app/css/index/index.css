@@ -8,3 +8,7 @@ nav {
   -webkit-justify-content: center;
   justify-content: center;
 }
+
+footer {
+  background: blue;
+}
