@@ -1,7 +1,3 @@
-// var gulp = require("gulp");
-// var babel = require("gulp-babel");
-//
-
 const gulp = require('gulp');
 const path = require('path');
 const $ = require('gulp-load-plugins')();
