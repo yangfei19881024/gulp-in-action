@@ -19,6 +19,7 @@ gulp.task('es62es5', function(){
 
 gulp.task('compass', function() {
   gulp.src(config.sassfile)
+    .pipe($.plumber())
     .pipe($.compass({
       project: path.join(__dirname, 'app'),
       css: 'css',
