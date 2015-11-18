@@ -4,7 +4,7 @@
 + ~~编译es6~~
 + ~~[使用compass](https://www.npmjs.com/package/gulp-compass)~~
 + ~~watch~~
-+ 浏览器及时刷新,自动打开浏览器
++ 浏览器及时刷新,自动打开浏览器 [html,scss,es6 文件有变动 都会及时刷新]
 + 代码合并压缩 加文件指纹
 + 替换文件
 + 配合requirejs，r.js
