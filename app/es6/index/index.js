@@ -1,4 +1,6 @@
 let a = 1;
 let name = "yangfei";
 
-var fun = () => a
+var fun = () => console.log(name)
+
+fun();
